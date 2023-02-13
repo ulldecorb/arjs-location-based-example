@@ -32,16 +32,27 @@
       <!-- <a-entity gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 41.456874; longitude: 2.251021" animation-mixer/> -->
       <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
       <!-- <a-entity gps-new-entity-place="latitude: 41.456874; longitude: 2.251021" scale="10 10 10"> -->
+        <!-- <a-animation attribute="rotation" to="0 360 0" dur="2000" easing="linear" repeat="indefinite"></a-animation> -->
+
+        <a-entity gps-new-entity-place="latitude: 41.456874; longitude: 2.251021">
+          <a-entity material='color: red; wireframe: true' geometry='primitive: box' position="0 0 0" scale="10 10 10"></a-entity>
+        </a-entity>
         <a-entity gps-new-entity-place="latitude: 41.457874; longitude: 2.251021">
-          <a-entity material='color: red; wireframe: true' geometry='primitive: box' position="10 4 4" scale="10 10 10"></a-entity>
-          <!-- <a-animation attribute="rotation" to="0 360 0" dur="2000" easing="linear" repeat="indefinite"></a-animation> -->
+          <a-entity material='color: blue; wireframe: true' geometry='primitive: box' position="0 0 0" scale="10 10 10"></a-entity>
+        </a-entity>
+        <a-entity gps-new-entity-place="latitude: 41.458874; longitude: 2.251021">
+          <a-entity material='color: green; wireframe: true' geometry='primitive: box' position="0 0 0" scale="10 10 10"></a-entity>
+        </a-entity>
+        <a-entity gps-new-entity-place="latitude: 41.457874; longitude: 2.250021">
+          <a-entity material='color: red; wireframe: true' geometry='primitive: cylinder' position="0 0 0" scale="10 10 10"></a-entity>
+        </a-entity>
+        <a-entity gps-new-entity-place="latitude: 41.457874; longitude: 2.251021">
+          <a-entity material='color: blue; wireframe: true' geometry='primitive: cylinder' position="0 0 0" scale="10 10 10"></a-entity>
         </a-entity>
         <a-entity gps-new-entity-place="latitude: 41.457874; longitude: 2.252021">
-          <a-entity material='color: tomato' geometry='primitive: box' position="10 0 0" scale="10 10 10"></a-entity>
+          <a-entity material='color: green; wireframe: true' geometry='primitive: cylinder' position="0 0 0" scale="10 10 10"></a-entity>
         </a-entity>
-        <a-entity gps-new-entity-place="latitude: 41.456874; longitude: 2.252021">
-          <a-entity material='color: red' geometry='primitive: cylinder' position="10 -10 0" scale="10 10 10"></a-entity>
-        </a-entity>
+
       <!-- </a-entity> -->
   </a-scene>
   </body>
