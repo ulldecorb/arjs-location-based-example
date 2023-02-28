@@ -29,27 +29,29 @@
   </head>
   <body>
   <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true'>
-      <a-assets>
+
+      <!-- <a-assets>
         <a-asset-item id="flor" src="./assets/flor_1.glb">
-      </a-assets>
+      </a-assets> -->
+
       <!-- <a-entity gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 41.456874; longitude: 2.251021" animation-mixer/> -->
       <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
       <!-- <a-entity gps-new-entity-place="latitude: 41.456874; longitude: 2.251021" scale="10 10 10"> -->
         <!-- <a-animation attribute="rotation" to="0 360 0" dur="2000" easing="linear" repeat="indefinite"></a-animation> -->
 
-        <a-entity gps-new-entity-place="latitude: 41.457374; longitude: 2.251021">
+        <!-- <a-entity gps-new-entity-place="latitude: 41.457374; longitude: 2.251021">
           <a-gltf-model 
             src="#flor"
             position="0 0 0" 
             scale="5 5 5">
           </a-gltf-model>
-        </a-entity>
+        </a-entity> -->
         
         <!-- POSITION TEST -->
-        <!-- <a-entity gps-new-entity-place="latitude: 41.456874; longitude: 2.251021">
-          <a-entity material='color: orange; wireframe: true' geometry='primitive: box' position="0 -30 0" scale="10 10 10"></a-entity>
-        </a-entity>
         <a-entity gps-new-entity-place="latitude: 41.456874; longitude: 2.251021">
+          <a-entity material='color: orange; wireframe: true' geometry='primitive: box' position="0 -30 0" scale="10 10 10" animation__rotate = "property: rotation; dur: 8000; easing: linear; dir: normal; from:0 0 0; to: 0 360 0; loop: true;"></a-entity>
+        </a-entity>
+        <!-- <a-entity gps-new-entity-place="latitude: 41.456874; longitude: 2.251021">
           <a-entity material='color: orange; wireframe: true' geometry='primitive: box' position="0 30 0" scale="10 10 10"></a-entity>
         </a-entity>
         <a-entity gps-new-entity-place="latitude: 41.456874; longitude: 2.251021">
