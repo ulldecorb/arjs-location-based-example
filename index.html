@@ -47,10 +47,15 @@
           </a-gltf-model>
         </a-entity> -->
         
-        <!-- POSITION TEST -->
         <a-entity gps-new-entity-place="latitude: 41.456874; longitude: 2.251021">
-          <a-entity material='color: orange; wireframe: true' geometry='primitive: box' position="0 -30 0" scale="10 10 10" animation__rotate = "property: rotation; dur: 8000; easing: linear; dir: normal; from:0 0 0; to: 0 360 0; loop: true;"></a-entity>
+          <a-entity animation__rotate = "property: rotation; dur: 8000; easing: linear; dir: normal; from:0 0 0; to: 0 360 0; loop: true;">
+            <a-entity material='color: orange; wireframe: true' geometry='primitive: box' position="30 0 0" scale="10 10 10"></a-entity>
+            <a-entity material='color: red; wireframe: true' geometry='primitive: box' position="0 30 0" scale="10 10 10"></a-entity>
+            <a-entity material='color: teal; wireframe: true' geometry='primitive: box' position="0 0 30" scale="10 10 10"></a-entity>
+          </a-entity>
         </a-entity>
+        
+          <!-- POSITION TEST -->
         <!-- <a-entity gps-new-entity-place="latitude: 41.456874; longitude: 2.251021">
           <a-entity material='color: orange; wireframe: true' geometry='primitive: box' position="0 30 0" scale="10 10 10"></a-entity>
         </a-entity>
@@ -71,7 +76,7 @@
         </a-entity>
         <a-entity gps-new-entity-place="latitude: 41.457874; longitude: 2.252021">
           <a-entity material='color: green; wireframe: true' geometry='primitive: box' position="0 0 0" scale="10 10 10"></a-entity>
-        </a-entity> -->
+        </a-entity> --> -->
 
       <!-- </a-entity> -->
   </a-scene>
